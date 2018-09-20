@@ -1,18 +1,19 @@
 # README
 
 ## usersテーブル
-|Column            |Type    |Options                             |
-|------------------|--------|------------------------------------|
-|name              |string  |null: false, unique: true, add_index|
+|Column  |Type    |Options                             |
+|--------|--------|------------------------------------|
+|name    |string  |null: false, unique: true, add_index|
 
 ### Association
 - has_many :messages
+- has_many :members
 - has_many :groups through: :members
 
 ## messagesテーブル
 |Column  |Type   |Options                                  |
 |--------|-------|-----------------------------------------|
-|image   |text   |null: false                              |
+|image   |text   |                                         |
 |text    |text   |                                         |
 |user_id |integer|foreign_key: true, null: false, add_index|
 |group_id|integer|foreign_key: true, null: false, add_index|
@@ -39,6 +40,6 @@
 |name    |string|null: false, unique: true|
 
 ### Association
-_ has_many :messages
+- has_many :messages
 - has_many :members
 - has_many :users through: :members
