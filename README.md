@@ -22,7 +22,7 @@
 - belongs_to :user
 - belongs_to :group
 
-## membersテーブル
+## membersテーブル　(group_usersテーブル)
 
 |Column  |Type   |Options                       |
 |--------|-------|------------------------------|
