@@ -19,7 +19,6 @@ class GroupsController < ApplicationController
   end
 
   def edit
-    @groups = Product.where("title LIKE(?)", "%#{params[:keyword]}%").limit(20)
   end
 
   def update
