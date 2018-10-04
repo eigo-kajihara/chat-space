@@ -11,7 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+<<<<<<< Updated upstream
 //= require jquery_ujs
+=======
+>>>>>>> Stashed changes
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
