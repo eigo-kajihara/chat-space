@@ -45,7 +45,6 @@ $(function(){
       $('.form__message').val('');
       $(".form__submit").attr('disabled', false);
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
-      alert('success')
     })
     .fail(function(){
       alert('error');
