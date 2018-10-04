@@ -28,8 +28,6 @@ $(function(){
     e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr('action');
-    console.log(formData);
-    console.log(url)
 
     $.ajax({
       url: url,
@@ -42,7 +40,7 @@ $(function(){
     .done(function(data) {
       var html = buildHTML(data);
       $('.messages').append(html);
-      $('.form__message').val('');
+      $('.form__message').reset();
       $(".form__submit").attr('disabled', false);
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
     })
