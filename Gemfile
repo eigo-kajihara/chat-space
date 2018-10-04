@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.7'
+gem 'rails', '~> 5.2.0'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.6.0'
 # Use Puma as the app server
@@ -65,11 +65,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'font-awesome-rails'
-<<<<<<< Updated upstream
 gem "devise"
-gem "mini_magick"
+gem "mini_magick", '~> 4.8.0'
 gem "carrierwave"
-=======
-gem 'jquery-rails'
-gem 'devise'
->>>>>>> Stashed changes
