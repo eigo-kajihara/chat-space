@@ -8,10 +8,10 @@
         %ul.left-header__members
           Member：
           %li.member
-            member
+            = @users
       .right-header
         .right-header__button
-          = link_to "Edit", 
+          = link_to "Edit", edit_group_path(@group), class: "edit"
     .messages.js-messages
       .message
         = render @messages
