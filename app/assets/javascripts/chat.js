@@ -26,7 +26,7 @@ $(function() {
 
    var interval = setInterval(function() {
       if (window.location.href.match(/\/groups\/\d+\/messages/)) {
-    $.ajax({
+    $.ajax( {
       url: location.href.json,
       type: 'GET',
       dataType : 'json'
@@ -40,7 +40,6 @@ $(function() {
         }
       });
       $('.upper-message').appendTo(insertHTML);
-      // alert('自動更新に成功しました')
     })
 
 
