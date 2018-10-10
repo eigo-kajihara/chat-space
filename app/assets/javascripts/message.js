@@ -1,4 +1,4 @@
-$(function(){
+$(function() {
   function buildHTML(data) {
     var Image = '';
     if (data.image) {
@@ -18,13 +18,13 @@ $(function(){
                         <p class="lower-message__content">
                           ${data.text}
                         </p>
-                          ${data.image}
+                          ${Image}
                     </div>
                 </div>`;
     return html;
   }
 
-  $('#new_message').on('submit', function(e){
+  $('#new_message').on('submit', function(e) {
     e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr('action');
@@ -40,7 +40,7 @@ $(function(){
     .done(function(data) {
       var html = buildHTML(data);
       $('.messages').append(html);
-      $('.form__message').reset();
+      $('.form__message').val("");
       $(".form__submit").attr('disabled', false);
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
     })

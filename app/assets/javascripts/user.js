@@ -70,8 +70,6 @@ $(function() {
     $(this).parent().remove();
   });
   $("#add-user").on("click", ".chat-group-user__btn", function() {
-    // var id = $(this).attr("data-user-id")
-    // var name = $(this).attr("data-user-name")
     $(this).parent().remove();
   });   
 });
