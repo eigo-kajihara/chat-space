@@ -41,8 +41,6 @@ $(function() {
       });
       $('.upper-message').appendTo(insertHTML);
     })
-
-
     .fail(function() {
       alert('自動更新に失敗しました');
     });
