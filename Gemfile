@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-turbolinks'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'dotenv-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -73,6 +73,7 @@ gem 'font-awesome-rails'
 gem "devise"
 gem "mini_magick", '~> 4.8.0'
 gem "carrierwave"
+gem 'fog-aws'
 
 group :production do
   gem 'unicorn'
